@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>EEG Simulator</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.poptrox.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/init.js"></script>
+	<script>
+		$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+      	scrollTop: $(hash).offset().top
+      }, 800, function(){
+      	
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+    });
+    } // End if
+});
+});
+</script>
+
+
+<noscript>
+	<link rel="stylesheet" href="css/skel.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style-xlarge.css" />
+</noscript>
+
+</head>
+<body>
+
+
+
+	<!-- Main -->
+	<div style="padding: 100px;">
+
+		<!-- One -->
+		<section id="one">
+			<header class="major">
+				<h2 align="center">EEG Simulator</h2>
+			</header>
+			<p>From my previous projects and research work I realised that recording EEG takes a lot a time, conditions maintenance and requires considerable investment, hence this project is aimed to reprodoce brain waves corresponsing specific to some dominant constituent brain wave.</p>
+		</section>
+
+		<div class="12u$ 12u$(large)">
+			<h2 align="center">Features</h2>
+			<ol>
+				<li>Generates EEG signals dominant over a specific frequency which corresponds to different brain states like Relaxed, Concentrated, Stress etc.</li>
+				<li>Completely free from noise which is present during real EEG recordings such as noise due to sensor, bandwidth, Motor activites of the subject </li>
+			</ol>
+		</div>
+
+		<div class="12u$ 12u$">
+			<h2 align="center">Workflow</h2>
+			<ol>
+				<li>A small sample of previously recorded EEG data is fed which serves as the baseline for the EEG that is to be imitated  </li>
+				<li>A optimisation algorithm is run over a Neural Mass Excitation Model so that the potential value generate start imitating the input EEG</li>
+				<li>The model wights are altered by comparing the EEG features from the generated and EEG required. After the extent to which features match comes within threshold range, the EEG then generated imitates the input EEG  </li>
+			</ol>
+		</div>
+
+		<div class="12u$ 12u$(xsmall)">
+			<h2 align="center">Knowledge Gained</h2>
+			<ol>
+				<li>Discripting features that help define and differentiates EEG Signals</li>
+				<li>Implementing Optimisation algorithm over Biological Models to alter weights</li>
+				<li>Implementing Reinformcement Learning for Optemisations.</li>
+			</ol>
+		</div>
+
+		<div align="center">
+			<a href="index.html" class="button special">Home</a>
+		</div>

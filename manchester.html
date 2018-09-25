@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>Synaptic Analysis</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.poptrox.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/init.js"></script>
+	<script>
+		$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+      	scrollTop: $(hash).offset().top
+      }, 800, function(){
+      	
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+    });
+    } // End if
+});
+});
+</script>
+
+
+<noscript>
+	<link rel="stylesheet" href="css/skel.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style-xlarge.css" />
+</noscript>
+
+</head>
+<body>
+
+
+
+	<!-- Main -->
+	<div style="padding: 100px;">
+
+		<!-- One -->
+		<section id="one">
+			<header class="major">
+				<h2 align="center">Neural Computational Model to Study the Synaptic Process Associated with Alpha Brain Waves</h2>
+			</header>
+			<p>EEG scans of the brain are embedded with information that describes brain state and any anaomalies within these scans is a clear indication of probable neurological disease. Biologically inspired computational models have enabled neuroscience researchers in understanding and predicting neurological and psychiatric disorders. This endovour was concentrated over developing a computation model imitating Alpha dominant Brain waves. We choose Alpha waves since they play an integral role in various awake cognitive states. At the same time, anomalies of alpha rhythmic oscillations are indicators of several disease conditions, for example ‘slowing’ (reduced frequency of peak power) of the alpha rhythm is a hallmark of EEG in Alzheimer’s disease.</p>
+		</section>
+
+		<div class="12u$ 12u$">
+			<h2 align="center">Workflow</h2>
+			<ol>
+				<li>Initial Voltage of Neural Mass (collection of similar neurons) is providing wherein we assume the Neural Mass is free from any stimuli.</li>
+				<li>We provide the model with noise in form of changed voltages which serves as a stimuli.</li>
+				<li>The noise causes voltage change over several neural masses (implemented in our model) due to excitation and inhibition caused by the noise </li>
+				<li>The neural mass voltages generated after the model has undergone all excitations and inhibition serves as the target EEG.</li>
+				<li>The EEG recorded is verified to be alpha dominant by determining power of different frequencies in the resultant volatage and making sure frequencies within the alpha range 4Hz-7Hz are dominant. </li>
+			</ol>
+		</div>
+
+		<div class="12u$ 12u$(xsmall)">
+			<h2 align="center">Knowledge Gained</h2>
+			<ol>
+				<li>Underling concept of Synaptic Interactions between two neural masses.</li>
+				<li>Determining Anologies between biological structure and Artifical Neural Networks.</li>
+				<li>Implementing of Neural Networks for computing targeted volatage outputs.</li>
+			</ol>
+		</div>
+
+		<div align="center">
+			<a href="index.html" class="button special">Home</a>
+		</div>

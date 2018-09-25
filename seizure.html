@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>Seizure Warning</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.poptrox.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/init.js"></script>
+	<script>
+		$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+      	scrollTop: $(hash).offset().top
+      }, 800, function(){
+      	
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+    });
+    } // End if
+});
+});
+</script>
+
+
+<noscript>
+	<link rel="stylesheet" href="css/skel.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style-xlarge.css" />
+</noscript>
+
+</head>
+<body>
+
+
+
+	<!-- Main -->
+	<div style="padding: 100px;">
+
+		<!-- One -->
+		<section id="one">
+			<header class="major">
+				<h2 align="center">Intracranial EEG analysis for predictioon of onset of a Seizure</h2>
+			</header>
+			<p> Epilepsy is a chronic neurological condition where abnormal electrical activity in the brain causes
+			seizures.Epileptic seizures are events that can vary from brief and nearly unnoticeable periods to long stretches of vigorous shaking, rhythmic muscle contractions or muscle spasms. Approximately 50 million people worldwide suffer from epilepsy, making it one of the most common neurological diseases globally. The seizure causes an array of problems, especially for patients who have developed drug resistant epilepsy, the possibility of predicting seizures in advance could be very useful, not only for the patients but also for the medical professionals dealing with such disorders.<br> 
+			In current practice trained neurologists analyze signals from EEG and synchro- nized video of the patients which tends to be a very tedious and slow task as it requires differentiating signals across multiple days. Here an automated system that accurately analyses patterns and classifies signal segments into different temporal dynamics of the brain, would be extremely fast and useful. Due to extensive development in the field of EEG data collection and machine learning, there is a potential to completely automate the seizure prediction process, in this endevour we employ numerous strategies to clean the time- series data, perform feature engineering and apply various machine learning techniques to predict the onset of a seizure episode. </p>
+		</section>
+
+			<div class="12u$ 12u$">
+				<h2 align="center">Workflow</h2>
+				<ol>
+					<li>We get EEG recordings from epileptic subjects and subjects with no history of neural disorders.</li>
+					<li>We clean the the EEG data and perform spatio-temporal based time series analysis of this intracranial electroencephalogram data</li>
+					<li>After the analysis we determine some domain specific and general time searies fetures for representing EEG signals
+					<li>The features are then passed to a statistical model for predictions of the anomalies. The model generated is subject-specific as there is no specific area of origin epilepsy in the brain and the anomaliy arisies in different areas depending from person to person</li>
+					</ol>
+				</div>
+
+				<div class="12u$ 12u$(xsmall)">
+					<h2 align="center">Knowledge Gained</h2>
+					<ol>
+						<li>Signal Processing and handling noise generated while data recording. </li>
+						<li>EEG processing and artifacts analysis and understaing to what part of the brain they correspond to.</li>
+						<li>Determining information hidden within the voltage recordings of brain.</li>
+						<li>Advantages, Disadvantages and Applicability of Machine Learning model for different features and usecases. </li>
+					</ol>
+				</div>
+
+				<div align="center">
+					<a href="index.html" class="button special">Home</a>
+				</div>

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>Cognitive Analysis</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.poptrox.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/init.js"></script>
+	<script>
+		$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+      	scrollTop: $(hash).offset().top
+      }, 800, function(){
+      	
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+    });
+    } // End if
+});
+});
+</script>
+
+
+<noscript>
+	<link rel="stylesheet" href="css/skel.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style-xlarge.css" />
+</noscript>
+
+</head>
+<body>
+
+
+
+	<!-- Main -->
+	<div style="padding: 100px;">
+
+		<!-- One -->
+		<section id="one">
+			<header class="major">
+				<h2 align="center">Classification of Scalp EEG Scans into Different Cognitive Brain States</h2>
+			</header>
+			<p>We usually find it hard to adjust our brain states between concentration and relaxation, flexibly that we cannot work and rest effectively. Therefore, a convenient and real-time concentration-relaxation feedback system should be established so as to show our current brain state and help us adjust our brain state more flexiblyIn our research, we attempt to find and establish the the effect of stimulus over human brain and determine ways to initiate concentration and relaxation.</p>
+		</section>
+
+		<div class="12u$ 12u$">
+			<h2 align="center">Workflow</h2>
+			<ol>
+				<li>We collect and analyse EEG for different Brain states such as relaxed, Concentrated, Stressed.</li>
+				<li>The Machine Learning model is trained over this data so that it can classify new EEG recordings under these classes</li>
+				<li>The subject is introduced to different stimulus of music and videos and the change in brain state is recorded due to the stimulus</li>
+				<li>When the required change in the brain state is achived the stimulus properties are saved for that particular subject and tested on different users to validate.</li>
+				<li> If the desired results are achived the stimulus can be considered a viable option for transfering to a particular brain state
+			</ol>
+		</div>
+
+		<div class="12u$ 12u$(xsmall)">
+			<h2 align="center">Knowledge Gained</h2>
+			<ol>
+				<li>Cognitive information provided by EEG signals</li>
+				<li>Relevance of constituent Alpha, Beta, Gamma, Theta and delta waves for determining brain state</li>
+				<li>Relation between audito and visusal stimulus over brain state.</li>
+			</ol>
+		</div>
+
+		<div align="center">
+			<a href="index.html" class="button special">Home</a>
+		</div>

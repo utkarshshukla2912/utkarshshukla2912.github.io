@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>Epilepsy Predictor</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.poptrox.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/init.js"></script>
+	<script>
+		$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+      	scrollTop: $(hash).offset().top
+      }, 800, function(){
+      	
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+    });
+    } // End if
+});
+});
+</script>
+
+
+<noscript>
+	<link rel="stylesheet" href="css/skel.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style-xlarge.css" />
+</noscript>
+
+</head>
+<body>
+
+
+
+	<!-- Main -->
+	<div style="padding: 100px;">
+
+		<!-- One -->
+		<section id="one">
+			<header class="major">
+				<h2 align="center">Epilepsy Predictor</h2>
+			</header>
+			<p>Epilepsy is a group of neurological disorders identifiable by infrequent but recurrent seizures. Seizure prediction is widely recognized as a significant problem in the neuroscience domain. Developing a Brain-Computer Interface (BCI) for seizure prediction can provide an alert to the patient, providing a buffer time to get the necessary emergency medication or at least be able to call help, thus improving the quality of life of the patients. A considerable number of clinical studies presented evidence of symptoms (patterns) before seizure episodes, this project aims to exploit those patters in the brain waves and recognise them as anamolies and predict seizure</p>
+		</section>
+
+		<div class="12u$ 12u$(large)">
+			<h2 align="center">Features</h2>
+			<ol>
+				<li>Quick Preprocessing of data for realtime use, preprocesses 10 mins worth EEG recording wsampled at 400Hz with an average of 1.02s i.e processes 10 (mins) X 400 (freq) x 60 (sec per min) =  2,40,000 datapoints in 1.02 sec </li>
+				<li>Artificats analysis from EEG to automatically remove noise due to Eye Blinking, Heart Beats and Motor Movement.</li>
+				<li> Extensive feature extraction from multiple domains:<br>
+					 <b>Energy Based:</b> Entropy, Higuchi Features, Fractal Dimentions<br>
+					 <b>Frequency:</b> Band powers using Fast fourier Transform within different frequency bands<br>
+					 <b>Time Based:</b> Statistical features skewness, standard deviation<br>
+					 <b>Channel Based:</b> Eigen Matrix of correlation matrix<br>
+				<li>Ensembled Statistic Machine learning model for classification on the basis of feature extracted</li>
+			</ol>
+		</div>
+
+		<div class="12u$ 12u$">
+			<h2 align="center">Workflow</h2>
+			<ol>
+				<li>Scalp Raw EEG recorded serves as a input which is pased to the preprocessing and artifact removal module. The input EEG is sampled to 258 Hz, scaled and is made free from noise, sampled into windows of 2 min with a 1 min overlap </li>
+				<li>The preprocessed window is passed to the feature extraction module where above mentioned infromation is extracted which serve as a feature vector for our model</li>
+				<li>Each window is annotated based on the fact that was it extracted from file corresponding to epilepsy recording or not.
+				<li>The features are then passed to a ensmble model made from simple statistical model for improving sensitivity to the anomalies. The ensemble was made using Boosting technique</li>
+			</ol>
+		</div>
+
+		<div class="12u$ 12u$(xsmall)">
+			<h2 align="center">Knowledge Gained</h2>
+			<ol>
+				<li>Signal Processing and handling noise generated while data recording. </li>
+				<li>EEG processing and artifacts analysis and understaing to what part of the brain they correspond to.</li>
+				<li>Different information hidden within the voltage recordings of brain.</li>
+				<li>Difference between Bagging and Boosting techniques of creating ensemble models and when which technique should be used.</li>
+			</ol>
+		</div>
+
+		<div align="center">
+			<a href="index.html" class="button special">Home</a>
+		</div>

@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>Attendence</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.poptrox.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/init.js"></script>
+	<script>
+		$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+      	scrollTop: $(hash).offset().top
+      }, 800, function(){
+      	
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+    });
+    } // End if
+});
+});
+</script>
+
+
+<noscript>
+	<link rel="stylesheet" href="css/skel.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style-xlarge.css" />
+</noscript>
+
+</head>
+<body>
+
+
+
+	<!-- Main -->
+	<div style="padding: 100px;">
+
+		<!-- One -->
+		<section id="one">
+			<header class="major">
+				<h2 align="center">Automatic Attendance Management System Using Face Detection</h2>
+			</header>
+			<p>Maintenance of attendance is a difficult task in various institutions. Every institution has its own method of taking attendance such as using attendance sheet or by using some biometric methods. But these methods consumes a lot of time. Mostly student attendance is taken with the help of attendance sheet given to the faculty members. This consumes a lot of work and time. We do not know whether the authenticated student is responding or not. Calculation of consolidated attendance is another major task which may cause manual errors. In some other cases the attendance sheet may become lost or stolen by some of the students. Thus came my inspiration of developemnt of an automatic attendance system.</p>
+		</section>
+
+		<div class="12u$ 12u$(large)">
+			<h2 align="center">Features</h2>
+			<ol>
+				<li>Deep Neural Network for Facial Detection and Recognition of registered users </li>
+				<li>Automatic Enrollment of new faces with a unique id to match with the administerator.</li>
+				<li>Dasboard for viewing Attendence Recorded.</li>
+				<li>Cloud Based architecture for Marking Timestamp in realtime.</li>
+			</ol>
+		</div>
+
+		<div class="12u$ 12u$">
+			<h2 align="center">Workflow</h2>
+			<ol>
+				<li>A video Recorder is used for recording realtime videos minimum, 4 Mega Pixels</li>
+				<li>The recorder is connnect over a personal area network that transfers the frame to server</li>
+				<li>The frame is deployed over the server which reads the frames from the recorder as an input</li>
+				<li>A neural network detects if the frames contains faces. If yes the frames are cropped and the faces are sent to a different neural network for recognition, else next frame is scanned</li>
+				<li>A Custom Convolution Neural Network is trained over some registered users is used to recognise the faces and returns the name of the user or in case of new face returns a new face.</li>
+				<li>If the face is recognised, the databse is updated for that particular person with the timestamp.</li>
+				<li>If the face is not recognised the cropped face and the frame is kept for future training</li>
+				<li> When the system is disconnected with the camera and the video feed stops the Convolution Neural Network is trained over the new faces using transfer learning so that the model is not trained over the previous recognised faces.</li>
+			</ol>
+		</div>
+
+		<div class="12u$ 12u$(xsmall)">
+			<h2 align="center">Knowledge Gained</h2>
+			<ol>
+				<li>Integration of WebApps with Deep Learning models for realtime computation </li>
+				<li>Exploiting parallelism for handling multiple stream of video data from different cameras.</li>
+				<li>API Development for HTTP Requests.</li>
+				<li>Implementing Transfer Learning used in training model on new data for auto enrollment.</li>
+				<li>Combinatin of CNN with other Neural layers for small yet powerful netowrks so that they have very less computation and time requirements.</li>
+			</ol>
+		</div>
+
+		<div align="center">
+			<a href="index.html" class="button special">Home</a>
+		</div>
