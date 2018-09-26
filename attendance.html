@@ -65,9 +65,9 @@
 			<h2 >Features</h2>
 			<ol>
 				<li>Deep Neural Network for Facial Detection and Recognition of registered users </li>
-				<li>Automatic Enrollment of new faces with a unique id to match with the administerator.</li>
-				<li>Dasboard for viewing Attendence Recorded.</li>
-				<li>Cloud Based architecture for Marking Timestamp in realtime.</li>
+				<li>Automatic Enrollment of new faces with a unique id to match with the administrator.</li>
+				<li>Dashboard for viewing Attendance Recorded.</li>
+				<li>Cloud-Based architecture for Marking Timestamp in real-time.</li>
 			</ol>
 		</div>
 
@@ -75,24 +75,24 @@
 			<h2 >Workflow</h2>
 			<ol>
                 <li>A video Recorder is used for recording real-time videos minimum, 4 Mega Pixels</li>
-                <li>The recorder is connected over a personal area network that transfers the frame to server</li>
+                <li>The recorder is connected over a personal area network that transfers the frame to the server</li>
                 <li>The frame is deployed over the server which reads the frames from the recorder as an input</li>
                 <li>A neural network detects if the frames contain faces. If yes the frames are cropped and the faces are sent to a different neural network for recognition, else next frame is scanned</li>
                 <li>A Custom Convolution Neural Network is trained over some registered users is used to recognize the faces and returns the name of the user or in case of new face returns a new face.</li>
                 <li>If the face is recognized, the database is updated for that particular person with the timestamp.</li>
                 <li>If the face is not recognized the cropped face and the frame is kept for future training</li>
-                <li> When the system is disconnected with the camera and the video feed stops the Convolution Neural Network is trained over the new faces using transfer learning so that the model is not trained over the previous recognized faces.</li>
+                <li> When the system is disconnected from the camera and the video feed stops the Convolution Neural Network is trained over the new faces using transfer learning so that the model is not trained over the previously recognized faces.</li>
 			</ol>
 		</div>
 
 		<div class="12u$ 12u$(xsmall)">
 			<h2 >Knowledge Gained</h2>
 			<ol>
-				<li>Integration of WebApps with Deep Learning models for realtime computation </li>
-				<li>Exploiting parallelism for handling multiple stream of video data from different cameras.</li>
+				<li>Integration of WebApps with Deep Learning models for real-time computation </li>
+				<li>Exploiting parallelism for handling multiple streams of video data from different cameras.</li>
 				<li>API Development for HTTP Requests.</li>
-				<li>Implementing Transfer Learning used in training model on new data for auto enrollment.</li>
-				<li>Combinatin of CNN with other Neural layers for small yet powerful netowrks so that they have very less computation and time requirements.</li>
+				<li>Implementing Transfer Learning used in training model on new data for auto-enrollment.</li>
+				<li>Combination of CNN with other Neural layers for small yet powerful networks so that they have very less computation and time requirements.</li>
 			</ol>
 		</div>
 
