@@ -80,7 +80,7 @@
 			<ol>
                 <li>Scalp Raw EEG recorded serves as an input which is passed to the preprocessing and artifact removal module. The input EEG is sampled at 258 Hz, scaled and is made free from noise, sampled into windows of 2 min with a 1 min overlap </li>
                 <li>The preprocessed window is passed to the feature extraction module where the above-mentioned information is extracted which serve as a feature vector for our model</li>
-                <li>Each window is annotated based on the fact that was it extracted from file corresponding to epilepsy recording or not.</li>
+                <li>Each window is annotated based on the fact that was it extracted from file corresponding to Seizure recording or not.</li>
                 <li>The features are then passed to an ensemble model made from a simple statistical model for improving sensitivity to the anomalies. The ensemble was made using the Boosting technique</li>
 			</ol>
 		</div>
