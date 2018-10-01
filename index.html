@@ -6,7 +6,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
-	
+
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.poptrox.min.js"></script>
 	<script src="js/skel.min.js"></script>
@@ -53,29 +53,29 @@
 	}
 </style>
 <script>
-	$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+$(document).ready(function(){
+	// Add smooth scrolling to all links
+	$("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+			// Prevent default anchor click behavior
+			event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+			// Store hash
+			var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-      	scrollTop: $(hash).offset().top
-      }, 800, function(){
-      	
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-    });
-    } // End if
-});
+			// Using jQuery's animate() method to add smooth page scroll
+			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 800, function(){
+
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+			});
+		} // End if
+	});
 });
 </script>
 
@@ -93,15 +93,17 @@
 		<h3 align="center"><a href="#main">Home</a></h3>
 		<!--<h3 align="center"><a href="about.html">About Me</a></h3>-->
 		<h3 align="center"><a href="#one">Research Experience</a></h3>
-		<h3 align="center"><a href="#two">Projects</a></h3>
-		<h3 align="center"><a href="#three">Industrial Experience</a></h3>
+		<h3 align="center"><a href="#two">Industrial Experience</a></h3>
+		<h3 align="center"><a href="#three">Projects</a></h3>
+		<h3 align="center"><a href="#publication">Publications</a></h3>
+		<h3 align="center"><a href="#contact">Contact</a></h3>
 		<h3 align="center"><a href="docs/resume.pdf" target="_blank">Resume</a></h3>
 	</header>
 
 	<!-- Main -->
 	<div id="main">
 
-		
+
 		<section id="about">
 			<header class="major">
 				<h2>UTKARSH SHUKLA</h2>
@@ -109,23 +111,72 @@
 			<p>Presently a Computer Science undergrad from Vellore Institute of Technology. I derive an inexplicable adrenaline rush from everything new and unheard of, I like to call myself a motivated technologist, bringing in innovation in the way things work in the world of science.</p>
 			<!--
 			<ul class="actions">
-				<li><a href="about.html" class="button">More About Me</a></li>
-			</ul>-->
+			<li><a href="about.html" class="button">More About Me</a></li>
+		</ul>-->
+	</section>
+
+	<!-- One -->
+	<section id="one">
+		<h2>Research Experience</h2>
+		<div class="box alt">
+			<div class="row 50% uniform">
+
+				<div class="12u">
+					<span class="image fit">
+						<a href="manchester.html">
+							<div class="container">
+								<img src="images/fulls/manchester.png" class="image">
+								<div class="overlay">
+									<div class="text"><p>Neural Computational Model to Study the Synaptic Process Associated with Alpha Brain Waves, School Of Computer Science, University Of Manchester.</p></div>
+								</div>
+							</div>
+						</a>
+					</span>
+				</div>
+
+				<div class="6u">
+					<span class="image fit">
+						<a href = "seizure.html">
+							<div class="container">
+								<img src="images/thumbs/vit.png" class="image">
+								<div class="overlay">
+									<div class="text"><p><font size="2.7">Intracranial EEG analysis for predictioon of onset of a Seizure,School of Computer Science and Engineering, Vellore Institute of Technology.</font></p></div>
+								</div>
+							</div>
+						</a>
+					</span>
+				</div>
+
+				<div class="6u$">
+					<span class="image fit">
+						<a href="bci.html">
+							<div class="container">
+								<img src="images/thumbs/bci.png" class="image">
+								<div class="overlay">
+									<div class="text"><p>Cognitive Analysis of Scalp EEG,Brain Computer Interface Lab, Alpha Learning</p></div>
+								</div>
+							</div>
+						</a>
+					</span>
+
+				</div>
+			</div>
 		</section>
 
-		<!-- One -->
-		<section id="one">
-			<h2>Research Experience</h2>
+		<!-- Two -->
+		<section id="two">
+			<h2>Industrial Experience</h2>
 			<div class="box alt">
 				<div class="row 50% uniform">
-					
-					<div class="12u">
+
+					<div class="12u$">
 						<span class="image fit">
-							<a href="manchester.html">
+							<a href="socialcops.html">
 								<div class="container">
-									<img src="images/fulls/manchester.png" class="image">
+									<img src="images/fulls/socialcops.gif" class="image">
 									<div class="overlay">
-										<div class="text"><p>Neural Computational Model to Study the Synaptic Process Associated with Alpha Brain Waves, School Of Computer Science, University Of Manchester.</p></div>
+										<div class="text"><p>Data Scientist</p></div>
+
 									</div>
 								</div>
 							</a>
@@ -134,11 +185,11 @@
 
 					<div class="6u">
 						<span class="image fit">
-							<a href = "seizure.html">
+							<a href="mesh.html">
 								<div class="container">
-									<img src="images/thumbs/vit.png" class="image">
+									<img src="images/thumbs/mesh.png" class="image">
 									<div class="overlay">
-										<div class="text"><p><font size="2.7">Intracranial EEG analysis for predictioon of onset of a Seizure,School of Computer Science and Engineering, Vellore Institute of Technology.</font></p></div>
+										<div class="text"><p>Deep Learning Intern</p></div>
 									</div>
 								</div>
 							</a>
@@ -147,211 +198,201 @@
 
 					<div class="6u$">
 						<span class="image fit">
-							<a href="bci.html">
+							<a href="spinta.html">
 								<div class="container">
-									<img src="images/thumbs/bci.png" class="image">
+									<img src="images/thumbs/spinta.png" class="image">
 									<div class="overlay">
-										<div class="text"><p>Cognitive Analysis of Scalp EEG,Brain Computer Interface Lab, Alpha Learning</p></div>
+										<div class="text"><p>Machine Learning Data Analyst</p></div>
 									</div>
 								</div>
 							</a>
 						</span>
-
 					</div>
-				</div>
-			</section>
 
-			<!-- Two -->
-			<section id="two">
-				<h1>Projects</h1>
-				<div class="box alt">
-					<div class="row 50% uniform">
-
-						<div class="12u">
-							<span class="image fit">
-								<a href="epilepsy_predictor.html">
-									<div class="container">
-										<img src="images/thumbs/epilepsy.png" class="image">
-										<div class="overlay">
-											<div class="text">Epilepsy Predictor</div>
-										</div>
+					<div class="6u">
+						<span class="image fit">
+							<a href="euroexim.html">
+								<div class="container">
+									<img src="images/thumbs/euroexim.png" class="image">
+									<div class="overlay">
+										<div class="text"><p>Deep Learning Intern</p></div>
 									</div>
-								</a>
-							</span>
-						</div>
-
-						<div class="6u">
-							<span class="image fit">
-								<a href="attendance.html">
-									<div class="container">
-										<img src="images/fulls/face_recognition.png" class="image">
-										<div class="overlay">
-											<div class="text">Automated Attendance System</div>
-										</div>
-									</div>
-								</a>
-							</span>
-						</div>
-
-						<div class="6u">
-							<span class="image fit">
-								<a href="simulator.html">
-									<div class="container">
-										<img src="images/thumbs/simulator.png" class="image">
-										<div class="overlay">
-											<div class="text">EEG Simulator</div>
-										</div>
-									</div>
-								</a>
-							</span>
-						</div>
-
-						<div class="12u">
-							<span class="image fit">
-								<a href="coderank.html">
-									<div class="container">
-										<img src="images/fulls/coderank.png" class="image">
-										<div class="overlay">
-											<div class="text">Code Rank, VIT University</div>
-										</div>
-									</div>
-								</a>
-							</span>
-						</div>
-
+								</div>
+							</a>
+						</span>
 					</div>
-				</div>
-			</section>
-			
 
-			<!-- Three -->
-			<section id="three">
-				<h2>Industrial Experience</h2>
-				<div class="box alt">
-					<div class="row 50% uniform">
-
-						<div class="12u$">
-							<span class="image fit">
-								<a href="socialcops.html">
-									<div class="container">
-										<img src="images/fulls/socialcops.gif" class="image">
-										<div class="overlay">
-											<div class="text"><p>Data Scientist</p></div>
-											
-										</div>
+					<div class="6u$">
+						<span class="image fit">
+							<a href="mentored.html">
+								<div class="container">
+									<img src="images/thumbs/mentored.png" class="image">
+									<div class="overlay">
+										<div class="text"><p>Full Stack Developer</p></div>
 									</div>
-								</a>
-							</span>
-						</div>
-
-						<div class="6u">
-							<span class="image fit">
-								<a href="mesh.html">
-									<div class="container">
-										<img src="images/thumbs/mesh.png" class="image">
-										<div class="overlay">
-											<div class="text"><p>Deep Learning Intern</p></div>
-										</div>
-									</div>
-								</a>
-							</span>
-						</div>
-
-						<div class="6u$">
-							<span class="image fit">
-								<a href="spinta.html">
-									<div class="container">
-										<img src="images/thumbs/spinta.png" class="image">
-										<div class="overlay">
-											<div class="text"><p>Machine Learning Data Analyst</p></div>
-										</div>
-									</div>
-								</a>
-							</span>
-						</div>
-
-						<div class="6u">
-							<span class="image fit">
-								<a href="euroexim.html">
-									<div class="container">
-										<img src="images/thumbs/euroexim.png" class="image">
-										<div class="overlay">
-											<div class="text"><p>Deep Learning Intern</p></div>
-										</div>
-									</div>
-								</a>
-							</span>
-						</div>
-
-						<div class="6u$">
-							<span class="image fit">
-								<a href="mentored.html">
-									<div class="container">
-										<img src="images/thumbs/mentored.png" class="image">
-										<div class="overlay">
-											<div class="text"><p>Full Stack Developer</p></div>
-										</div>
-									</div>
-								</a>
-							</span>
-						</div>
-
-						<div class="12u$">
-							<span class="image fit">
-								<a href="alpha.html">
-									<div class="container">
-										<img src="images/fulls/alphalearning.png" class="image">
-										<div class="overlay">
-											<div class="text"><p>Machine Learning Intern</p></div>
-										</div>
-									</div>
-								</a>
-							</span>
-						</div>
-
+								</div>
+							</a>
+						</span>
 					</div>
+
+					<div class="12u$">
+						<span class="image fit">
+							<a href="alpha.html">
+								<div class="container">
+									<img src="images/fulls/alphalearning.png" class="image">
+									<div class="overlay">
+										<div class="text"><p>Machine Learning Intern</p></div>
+									</div>
+								</div>
+							</a>
+						</span>
+					</div>
+
 				</div>
+			</div>
+		</section>
+
+
+		<!-- Three -->
+		<section id="three">
+			<h1>Projects</h1>
+			<div class="box alt">
+				<div class="row 50% uniform">
+
+					<div class="12u">
+						<span class="image fit">
+							<a href="epilepsy_predictor.html">
+								<div class="container">
+									<img src="images/thumbs/epilepsy.png" class="image">
+									<div class="overlay">
+										<div class="text">Epilepsy Predictor</div>
+									</div>
+								</div>
+							</a>
+						</span>
+					</div>
+
+					<div class="6u">
+						<span class="image fit">
+							<a href="attendance.html">
+								<div class="container">
+									<img src="images/fulls/face_recognition.png" class="image">
+									<div class="overlay">
+										<div class="text">Automated Attendance System</div>
+									</div>
+								</div>
+							</a>
+						</span>
+					</div>
+
+					<div class="6u">
+						<span class="image fit">
+							<a href="simulator.html">
+								<div class="container">
+									<img src="images/thumbs/simulator.png" class="image">
+									<div class="overlay">
+										<div class="text">EEG Simulator</div>
+									</div>
+								</div>
+							</a>
+						</span>
+					</div>
+
+					<div class="12u">
+						<span class="image fit">
+							<a href="coderank.html">
+								<div class="container">
+									<img src="images/fulls/coderank.png" class="image">
+									<div class="overlay">
+										<div class="text">Code Rank, VIT University</div>
+									</div>
+								</div>
+							</a>
+						</span>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Publications -->
+		<section id="publication">
+
+			<h2>Published</h2>
+			<ol>
+				<li>
+					<p><b>Study and Analysis of Weighted PageRank Algorithm</b><br>
+							<i>A. Mishra, U. Shukla, B. Jaganathan and P. Shukla</i><br>
+							<a href="http://isbccc.org/2018/show/home" style="color: #a2a2a2">5th EAI International Conference on Big data and Cloud Computing Challenges </a>
+					</p>
+				</li>
+			</ol>
+
+
+
+			<h2>Pre-Prints</h2>
+			<ol>
+
+				<li>
+					<p><b>Epileptic Seizure Prediction Through Machine Learning and Spatio-temporal Features Based Time Series Analysis of Intracranial Electroencephalogram Data</b><br>
+							<i>U. Shukla, H. Bhatt and Dr. Nayeemulla Khan </i>
+					</p>
+				</li>
+
+				<li>
+					<p><b>An Adroit Approach Towards Text Summarisation</b><br>
+						 <i>U. Shukla, A. Mishra, Dr. T.P Sariki and Dr. B. Kumar</i>
+					</p>
+				</li>
+
+				<li>
+					<p><b>Study and Analysis of Stochastic PageRank Algorithm</b><br>
+							<i>U. Shukla, A. Mishra, B. Jaganathan and P. Shukla</i>
+					</p>
+				</li>
+
+				</ol>
 			</section>
 
 
 
 
+				<!-- Contanct -->
+				<section id="contact">
+					<h2>Get in Touch</h2>
+					<p>Have a new Idea ? Want to discuss something really bizzare ? I am your guy !</p>
+					<div class="row">
 
-			<!-- Contanct -->
-			<section id="contact">
-				<h2>Get in Touch</h2>
-				<p>Have a new Idea ? Want to discuss something really bizzare ? I am your guy !</p>
-				<div class="row">
 
-
-					<div class="4u$ 12u$(small)">
-						<ul class="labeled-icons">
-							<li>
-								<h3 class="icon fa-home"><span class="label">Address</span></h3>
-								702 Omaxe Heights.<br />
-								Lucknow, UP, 2260<br />
-								India.
-							</li>
-							<li>
-								<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
-								+91 790-505-7363
-							</li>
-							<li>
-								<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
-								<a>utkarshshukla2912@gmail.com</a>
-							</li>
-						</ul>
+						<div class="4u$ 12u$(small)">
+							<ul class="labeled-icons">
+								<li>
+									<h3 class="icon fa-home"><span class="label">Address</span></h3>
+									702 Omaxe Heights,<br />
+									Lucknow, UP, 226010,<br />
+									India.
+								</li>
+								<li>
+									<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+									+91 790-505-7363
+								</li>
+								<li>
+									<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+									<a>utkarshshukla2912@gmail.com</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-			</section>
+				</section>
 
-			<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://github.com/utkarshshukla2912" class="icon fa-github"><span class="label">Github</span></a></li>
-					<li><a href="https://www.linkedin.com/in/utkarsh-shukla-8b834b112/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-				</ul>
-			</footer>
+				<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://github.com/utkarshshukla2912" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/utkarsh-shukla-8b834b112/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+					</ul>
+				</footer>
 
-		</body>
-		</html>
+			</body>
+			</html>
