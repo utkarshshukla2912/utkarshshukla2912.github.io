@@ -1,84 +1,79 @@
 <!DOCTYPE HTML>
-
 <html>
-<head>
-	<title>Work@ATLAN</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.poptrox.min.js"></script>
-	<script src="js/skel.min.js"></script>
-	<script src="js/init.js"></script>
-	<script>
-		$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-      	scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-    });
-    } // End if
-});
-});
-</script>
-
-
-<noscript>
-	<link rel="stylesheet" href="css/skel.css" />
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/style-xlarge.css" />
-</noscript>
-
-</head>
-<body>
-
-
-
-	<!-- Main -->
-	<div style="padding: 100px;">
-
-		<!-- One -->
-		<section id="one">
-			<header class="major">
-				<h2>Developing scalable models for prediction of Demographic, Economical and Human Settlement parameters of different geographies and
-						providing business solutions based on the estimated attributes</h2>
-				<p align="right"> December, 2018 - Present</p>
-			</header>
-
-            <p> </p>
-		</section>
-
-		<div class="12u$ 12u$(xsmall)">
-			<h2 >Knowledge Gained</h2>
-			<ol>
-				<li>Understanding the need of excssive cleaning on public data and developing pipelines for automated cleaning and quality checks</li>
-				<li>Different applications and usecases of geospatial data.</li>
-				<li>Creating data ingestion and exgestion pipeline from S3 - PostGres (with manipulations)- S3</li>
-				<li>Using distributed Technologies ( Spark and Hadoop) for big data.</li>
-				<li>Object detection, recognition, and localization from Satellite Imagery.</li>
-				<li>Different economic and demographic Systems that contribute to human settlement. </li>
-				<li>Developing, scaling and deployement of different statistical models</li>
-				<li>Understanding DAAS (Data as a Service) business model</li>
-				<li>Handling Data Security issues across platforms</li>
-			</ol>
-		</div>
-
-		<div >
-			<a href="index.html" class="button special">Home</a>
-		</div>
+	<head>
+		<title>Work@ATLAN</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.poptrox.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<script>
+			$(document).ready(function(){
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+		// Prevent default anchor click behavior
+		event.preventDefault();
+		// Store hash
+		var hash = this.hash;
+		// Using jQuery's animate() method to add smooth page scroll
+		// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		$('html, body').animate({
+		scrollTop: $(hash).offset().top
+		}, 800, function(){
+		// Add hash (#) to URL when done scrolling (default click behavior)
+		window.location.hash = hash;
+		});
+		} // End if
+		});
+		});
+		</script>
+		<noscript>
+		<link rel="stylesheet" href="css/skel.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body>
+		<!-- Main -->
+		<div style="padding: 100px;">
+			<!-- One -->
+			<section id="one">
+				<header class="major">
+					<h2>Developing scalable models for prediction of Demographic, Economical and Human Settlement parameters of different geographies and
+					providing business solutions based on the estimated attributes</h2>
+					<p align="right"> December, 2018 - Present</p>
+				</header>
+				<p> </p>
+			</section>
+			<div class="12u$ 12u$(xsmall)">
+				<h2 >Task Summary</h2>
+				<ul>
+					<li>Developed scalable models for prediction of Demographic, Economical and Human Settlement parameters of different geographies for providing business solutions. Parameters included affluence index , economic potential index, ambient populatoon, traffic flow.</li>
+					<li>Developed a graph based analysis model for identifying human Settlement patterns, and distribution of family types across Indian metro cities.</li>
+					<li>Developed rural growth index based on identifying patterns in man made structures, Indian census data, government schemes employed in areas and year on year farming yields. Heavily involved in creating data cleaning and scraping pipelines on Airflow.</li>
+					<li>Built data quality as a service using Spark to calculate statistical metric using <a href = "https://aws.amazon.com/blogs/big-data/test-data-quality-at-scale-with-deequ/">amazon dequee</a> while providing an interface to implement custom metrics with support for data sources like Snowflake, Data Lakes on S3, Oracle. User can also setup custom checks on metrics, done to ensure trust in the data.</li>
+					<li>Introducing full observability and orchestration to serverless spark applications <a href="https://github.com/GoogleCloudPlatform/spark-on-k8s-operator">Spark-on-K8s</a></li>
+					<li>Built ETL pipelines using Airflow and created a patch for Airflow 10.0.3 to get more granular metrics for generating dashboards and setting up alerts using Prometheus and Grafana.</li>
+					<li>Creating data ingestion and exgestion pipeline for S3 -> PostGres (with geospatial manipulations) -> S3</li>
+				</ul>
+			</div>
+			<div class="12u$ 12u$(xsmall)">
+				<h2 >Knowledge Gained</h2>
+				<ul>
+					<li>Different applications and usecases of geospatial data.</li>
+					<li>Creating data ingestion and exgestion pipeline from S3 - PostGres (with manipulations)- S3</li>
+					<li>Using distributed Technologies ( Spark and Hadoop) for big data.</li>
+					<li>Object detection, recognition, and localization from Satellite Imagery.</li>
+					<li>Different economic and demographic Systems that contribute to human settlement. </li>
+					<li>Developing, scaling and deployement of different statistical models</li>
+					<li>Understanding DAAS (Data as a Service) business model</li>
+					<li>Handling Data Security issues across platforms</li>
+				</ul>
+			</div>
+			<div >
+				<a href="index.html" class="button special">Home</a>
+			</div>

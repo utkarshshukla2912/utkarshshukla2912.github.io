@@ -1,394 +1,333 @@
 <!DOCTYPE HTML>
-
 <html>
-<head>
-	<title>Utkarsh Shukla</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.poptrox.min.js"></script>
-	<script src="js/skel.min.js"></script>
-	<script src="js/init.js"></script>
-	<style>
-	.container {
-		position: relative;
-		border-width: 0.5px;
-	}
-
-	.image {
-		display: block;
-		width: 100%;
-		height: auto;
-	}
-
-	.overlay {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 100%;
-		width: 100%;
-		opacity: 0;
-		transition: .5s ease;
-		background-color: black;
-	}
-
-	.container:hover .overlay {
-		opacity: 0.8;
-	}
-
-	.text {
-		color: white;
-		font-size: 20px;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-webkit-transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		text-align: center;
-	}
-</style>
-<script>
-$(document).ready(function(){
-	// Add smooth scrolling to all links
-	$("a").on('click', function(event) {
-
-		// Make sure this.hash has a value before overriding default behavior
-		if (this.hash !== "") {
-			// Prevent default anchor click behavior
-			event.preventDefault();
-
-			// Store hash
-			var hash = this.hash;
-
-			// Using jQuery's animate() method to add smooth page scroll
-			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-			$('html, body').animate({
-				scrollTop: $(hash).offset().top
-			}, 800, function(){
-
-				// Add hash (#) to URL when done scrolling (default click behavior)
-				window.location.hash = hash;
+	<head>
+		<title>Utkarsh Shukla</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.poptrox.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<style>
+		.container {
+			position: relative;
+			border-width: 0.5px;
+		}
+		.image {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		.overlay {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			transition: .5s ease;
+			background-color: black;
+		}
+		.container:hover .overlay {
+			opacity: 0.8;
+		}
+		.text {
+			color: white;
+			font-size: 20px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+		</style>
+		<script>
+		$(document).ready(function(){
+			// Add smooth scrolling to all links
+			$("a").on('click', function(event) {
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+					// Prevent default anchor click behavior
+					event.preventDefault();
+					// Store hash
+					var hash = this.hash;
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function(){
+						// Add hash (#) to URL when done scrolling (default click behavior)
+						window.location.hash = hash;
+					});
+				} // End if
 			});
-		} // End if
-	});
-});
-</script>
-
-<noscript>
-	<link rel="stylesheet" href="css/skel.css" />
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/style-xlarge.css" />
-</noscript>
-
-</head>
-<body id="top">
-
-	<!-- Header -->
-	<header id="header">
-		<h3 align="center"><a href="#main">Home</a></h3>
-		<!--<h3 align="center"><a href="about.html">About Me</a></h3>-->
-		<h3 align="center"><a href="#one">Research Experience</a></h3>
-		<h3 align="center"><a href="#two">Industrial Experience</a></h3>
-		<h3 align="center"><a href="#three">Projects</a></h3>
-		<h3 align="center"><a href="#publication">Publications</a></h3>
-		<h3 align="center"><a href="#ENandT">Something Interesting</a></h3>
-		<h3 align="center"><a href="#contact">Contact</a></h3>
-		<h3 align="center"><a href="docs/utkarsh_shukla.pdf" target="_blank">Resume</a></h3>
-	</header>
-
-	<!-- Main -->
-	<div id="main">
-
-
-		<section id="about">
-			<header class="major">
-				<h2>UTKARSH SHUKLA</h2>
-			</header>
-			<p>Presently a Data Science associate at <a href="https://atlan.com" target="_blank">Atlan</a> and a computer science graduate from Vellore Institute of Technology. Love and amazed by technology and the tools that helps me understand technology better are mathematics, engineering and data. Using these tools, I have built products & solutions for multiple industries (FMCG, Health, Banking, Marketing, Education) in the past 2 years. Currently posses a blend of data engineering and data science thanks to the opportunity of wearing different hats at a fast growing startup. More interested in the solving a problems rather than applying a Deep learning architecture to a data that can be analyzed by a simple tree. Presently exploring <a href="https://www.britannica.com/topic/Stoicism", target="_blank"><b><i>stoicism</i></b></a></p>
-			<p>Favourite Quote:<br><i>The simpler, the better. Complications lead to multiplicative chains of unanticipated effects. ― Nassim Nicholas</i></p>
-
-			<!--
-			<ul class="actions">
-			<li><a href="about.html" class="button">More About Me</a></li>
-		</ul>-->
-	</section>
-
-	<!-- One -->
-	<section id="one">
-		<h2>Research Experience</h2>
-		<div class="box alt">
-			<div class="row 50% uniform">
-
-				<div class="12u">
-					<span class="image fit">
-						<a href="manchester.html">
-							<div class="container">
-								<img src="images/fulls/manchester.png" class="image">
-								<div class="overlay">
-									<div class="text"><p>Neural Computational Model to Study the Synaptic Process Associated with Alpha Brain Waves, School Of Computer Science, University Of Manchester.</p></div>
-								</div>
-							</div>
-						</a>
-					</span>
+		});
+		</script>
+		<noscript>
+		<link rel="stylesheet" href="css/skel.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body id="top">
+		<!-- Header -->
+		<header id="header">
+			<h3 align="center"><a href="#main">Home</a></h3>
+			<!--<h3 align="center"><a href="about.html">About Me</a></h3>-->
+			<h3 align="center"><a href="#one">Industrial Experience</a></h3>
+			<h3 align="center"><a href="#two">Research Experience</a></h3>
+			<h3 align="center"><a href="#three">Projects</a></h3>
+			<h3 align="center"><a href="#publication">Publications</a></h3>
+			<h3 align="center"><a href="#ENandT">Something Interesting</a></h3>
+			<h3 align="center"><a href="#contact">Contact</a></h3>
+			<h3 align="center"><a href="docs/utkarsh_shukla.pdf" target="_blank">Resume</a></h3>
+		</header>
+		<!-- Main -->
+		<div id="main">
+			<section id="about">
+				<header class="major">
+					<h2>UTKARSH SHUKLA</h2>
+				</header>
+				<p>Presently a Data Science Engineer at <a href="https://atlan.com" target="_blank">Atlan</a> and a computer science graduate from Vellore Institute of Technology. Love and amazed by technology and the tools that helps me understand the tech better are mathematics, engineering and data. Using these tools, I have built products & solutions for multiple industries (FMCG, Health, Banking, Marketing, Education) in the past 2 years. Currently posses a blend of data engineering and data science thanks to the opportunity of wearing different hats at a fast growing startup. More interested in the solving a problems rather than applying a Deep learning architecture to a data that can be analyzed by a simple tree. Presently exploring &nbsp <a href="https://www.britannica.com/topic/Stoicism", target="_blank"><b><i>stoicism</i></b></a></p>
+				<p>Favourite Quote:<br><i>The simpler, the better. Complications lead to multiplicative chains of unanticipated effects. ― Nassim Nicholas</i></p>
+				<!--
+				<ul class="actions">
+										<li><a href="about.html" class="button">More About Me</a></li>
+				</ul>-->
+			</section>
+			<!-- One -->
+			<section id="one">
+				<h2>Industrial Experience</h2>
+				<div class="box alt">
+					<div class="row 50% uniform">
+						<div class="12u$">
+							<span class="image fit">
+								<a href="atlan.html">
+									<div class="container">
+										<img src="images/fulls/atlanGrid.png" class="image">
+										<div class="overlay">
+											<div class="text"><p> Associate Data Scientist</p></div>
+										</div>
+									</div>
+								</a>
+							</span>
+						</div>
+						<div class="6u">
+							<span class="image fit">
+								<a href="mesh.html">
+									<div class="container">
+										<img src="images/thumbs/mesh.png" class="image">
+										<div class="overlay">
+											<div class="text"><p>Deep Learning Intern</p></div>
+										</div>
+									</div>
+								</a>
+							</span>
+						</div>
+						<div class="6u">
+							<span class="image fit">
+								<a href="euroexim.html">
+									<div class="container">
+										<img src="images/thumbs/euroexim.png" class="image">
+										<div class="overlay">
+											<div class="text"><p>Deep Learning Intern</p></div>
+										</div>
+									</div>
+								</a>
+							</span>
+						</div>
+						<div class="12u$">
+							<span class="image fit">
+								<a href="mentored.html">
+									<div class="container">
+										<img src="images/fulls/mentored_research.png" class="image" style="display:block;margin:auto;">
+										<div class="overlay">
+											<div class="text"><p>Full Stack Developer</p></div>
+										</div>
+									</div>
+								</a>
+							</span>
+						</div>
+					</div>
 				</div>
-
-				<div class="6u">
-					<span class="image fit">
-						<a href = "seizure.html">
-							<div class="container">
-								<img src="images/fulls/vit.gif" class="image">
-								<div class="overlay">
-									<div class="text"><p>Intracranial EEG analysis for prediction of onset of a Seizure, &nbspSCSE,&nbsp VIT.</p></div>
-								</div>
-							</div>
-						</a>
-					</span>
+			</section>
+			<!-- Two -->
+			<section id="two">
+				<h2>Research Experience</h2>
+				
+				<div class="box alt">
+					<div class="row 50% uniform">
+						<div class="12u">
+							<span class="image fit">
+								<a href="manchester.html">
+									<div class="container">
+										<img src="images/fulls/manchester.png" class="image">
+										<div class="overlay">
+											<div class="text"><p>Neural Computational Model to Study the Synaptic Process Associated with Alpha Brain Waves, School Of Computer Science, University Of Manchester.</p></div>
+										</div>
+									</div>
+								</a>
+							</span>
+						</div>
+						<div class="6u">
+							<span class="image fit">
+								<a href = "seizure.html">
+									<div class="container">
+										<img src="images/fulls/vit.gif" class="image">
+										<div class="overlay">
+											<div class="text"><p>Intracranial EEG analysis for prediction of onset of a Seizure, &nbspSCSE,&nbsp VIT.</p></div>
+										</div>
+									</div>
+								</a>
+							</span>
+						</div>
+						<div class="6u$">
+							<span class="image fit">
+								<a href="bci.html">
+									<div class="container">
+										<img src="images/thumbs/bci.gif" class="image">
+										<div class="overlay">
+											<div class="text"><p>Cognitive Analysis of Scalp EEG,Brain Computer Interface Lab, Alpha Learning</p></div>
+										</div>
+									</div>
+								</a>
+							</span>
+						</div>
+					</div>
 				</div>
-
-				<div class="6u$">
-					<span class="image fit">
-						<a href="bci.html">
-							<div class="container">
-								<img src="images/thumbs/bci.gif" class="image">
-								<div class="overlay">
-									<div class="text"><p>Cognitive Analysis of Scalp EEG,Brain Computer Interface Lab, Alpha Learning</p></div>
-								</div>
-							</div>
-						</a>
-					</span>
-
+			</section>
+			<!-- Three -->
+			<section id="three">
+				<h1>Projects</h1>
+				<div class="box alt">
+					<div class="row 50% uniform">
+						<div class="6u">
+							<span class="image fit">
+								<a href="epilepsy_predictor.html">
+									<div class="container">
+										<img src="images/fulls/epilepsy.gif" class="image">
+										<div class="overlay">
+											<div class="text">Epilepsy Predictor</div>
+										</div>
+									</div>
+								</a>
+							</span>
+						</div>
+						<div class="6u$">
+							<span class="image fit">
+								<a href="simulator.html">
+									<div class="container">
+										<img loop=infinite src="images/thumbs/simulator.gif" class="image">
+										<div class="overlay">
+											<div class="text">EEG Simulator</div>
+										</div>
+									</div>
+								</a>
+							</span>
+						</div>
+						<div class="6u">
+							<span class="image fit">
+								<a href="coderank.html">
+									<div class="container">
+										<img src="images/fulls/coderank.gif" class="image">
+										<div class="overlay">
+											<div class="text">Code Rank, VIT University</div>
+										</div>
+									</div>
+								</a>
+							</span>
+						</div>
+						<div class="6u$">
+							<span class="image fit">
+								<a href="attendance.html">
+									<div class="container">
+										<img src="images/fulls/face_recognition.gif" class="image">
+										<div class="overlay">
+											<div class="text">Automated Attendance System</div>
+										</div>
+									</div>
+								</a>
+							</span>
+						</div>
+					</div>
 				</div>
-			</div>
-		</section>
-
-		<!-- Two -->
-		<section id="two">
-			<h2>Industrial Experience</h2>
-			<div class="box alt">
-				<div class="row 50% uniform">
-
-					<div class="12u$">
-						<span class="image fit">
-							<a href="atlan.html">
-								<div class="container">
-									<img src="images/fulls/atlanGrid.png" class="image">
-									<div class="overlay">
-										<div class="text"><p> Associate Data Scientist</p></div>
-
-									</div>
-								</div>
-							</a>
-						</span>
-					</div>
-
-					<div class="6u">
-						<span class="image fit">
-							<a href="mesh.html">
-								<div class="container">
-									<img src="images/thumbs/mesh.png" class="image">
-									<div class="overlay">
-										<div class="text"><p>Deep Learning Intern</p></div>
-									</div>
-								</div>
-							</a>
-						</span>
-					</div>
-
-
-					<div class="6u">
-						<span class="image fit">
-							<a href="euroexim.html">
-								<div class="container">
-									<img src="images/thumbs/euroexim.png" class="image">
-									<div class="overlay">
-										<div class="text"><p>Deep Learning Intern</p></div>
-									</div>
-								</div>
-							</a>
-						</span>
-					</div>
-
-
-					<div class="12u$">
-						<span class="image fit">
-							<a href="mentored.html">
-								<div class="container">
-									<img src="images/fulls/mentored_research.png" class="image" style="display:block;margin:auto;">
-									<div class="overlay">
-										<div class="text"><p>Full Stack Developer</p></div>
-									</div>
-								</div>
-							</a>
-						</span>
-					</div>
-
-				</div>
-			</div>
-		</section>
-
-
-		<!-- Three -->
-		<section id="three">
-			<h1>Projects</h1>
-			<div class="box alt">
-				<div class="row 50% uniform">
-
-					<div class="6u">
-						<span class="image fit">
-							<a href="epilepsy_predictor.html">
-								<div class="container">
-									<img src="images/fulls/epilepsy.gif" class="image">
-									<div class="overlay">
-										<div class="text">Epilepsy Predictor</div>
-									</div>
-								</div>
-							</a>
-						</span>
-					</div>
-
-
-					<div class="6u$">
-						<span class="image fit">
-							<a href="simulator.html">
-								<div class="container">
-									<img loop=infinite src="images/thumbs/simulator.gif" class="image">
-									<div class="overlay">
-										<div class="text">EEG Simulator</div>
-									</div>
-								</div>
-							</a>
-						</span>
-					</div>
-
-					<div class="6u">
-						<span class="image fit">
-							<a href="coderank.html">
-								<div class="container">
-									<img src="images/fulls/coderank.gif" class="image">
-									<div class="overlay">
-										<div class="text">Code Rank, VIT University</div>
-									</div>
-								</div>
-							</a>
-						</span>
-					</div>
-
-					<div class="6u$">
-						<span class="image fit">
-							<a href="attendance.html">
-								<div class="container">
-									<img src="images/fulls/face_recognition.gif" class="image">
-									<div class="overlay">
-										<div class="text">Automated Attendance System</div>
-									</div>
-								</div>
-							</a>
-						</span>
-					</div>
-
-				</div>
-			</div>
-		</section>
-
-
-		<!-- Publications -->
-		<section id="publication">
-
-			<h2>Publications</h2>
-
-			<ol>
-
-				<li>
-					<h4>
+			</section>
+			<!-- Publications -->
+			<section id="publication">
+				<h2>Publications</h2>
+				<ul>
+					<li>
+						<h4>
 						<a href = 'https://www.ijeat.org/wp-content/uploads/papers/v9i1/A2068109119.pdf'>Epileptic Seizure Prediction Through Machine Learning and Spatio-Temporal Features Based Time Series Analysis of Intracranial Electroencephalogram Data </a>
-					</h4>
-				</li>
-
-				<li>
-					<h4>
+						</h4>
+					</li>
+					<li>
+						<h4>
 						<a href = 'https://www.ijeat.org/wp-content/uploads/papers/v8i5/E7903068519.pdf'>An Adroit Approach for Extractive Text Summarization </a>
-					</h4>
-				</li>
-
-				<li>
-					<h4>
+						</h4>
+					</li>
+					<li>
+						<h4>
 						<a href = 'http://isbccc.org/2018/show/accepted-papers'>Weighted PageRank Algorithm ( Accepted )</a>
-					</h4>
-				</li>
-
-			</ol>
-		</section>
-
-
-
-		<!-- Contanct -->
-		<section id="ENandT">
-
-
-			<ul>
-
-		<li>
-			<h4>Entrepreneurship</h4>
-			After working extensively on Brain Computer Interface, <a href = 'https://www.linkedin.com/in/hardik-bhatt-162a7414b/'>Hardik Bhatt</a> and I developed a prototype for realtime epileptic seizure prediction.
-			<br><b>Funds:</b> 20,000 £
-			<br><b>Proof of concept presented in May, 2019.</b>
-		</li>
-
-		<hr>
-
-		<li>
-			<h4>Talks</h4>
-			<ol>
-				<li>Getting Brain Waves to Python | <a href="https://www.youtube.com/watch?v=Bdn38wOmHsY" target="_blank"> PyData Delhi 2019</a> </li>
-				<li>A Dive into Brain Waves | <a href="https://commudle.com/gdg-new-delhi/events/devfest-19" target="_blank"> GoogleDeveloperGroup DevFest Delhi 2019</a> </li>
-			</ol>
-		</li>
-
-
-		<hr>
-
-		<li>
-			<h4>Recommended Books</h4>
-			<ol>
-				<li> <b>So Good They Can't Ignore You</b> --- <i> by Cal Newport</i></li>
-				<li> <b>Deep Work</b> --- <i> by Cal Newport</i>  </li>
-				<li> <b>AntiFragile</b> --- <i> by Nassim Nicholas Taleb</i>  </li>
-				<li> <b>Meditations</b> --- <i> by Marcus Aurelius</i>  </li>
-				<li> <b>Naked Statistics</b> --- <i> by Charles Wheelan</i>  </li>
-			</ol>
-		</li>
-
-	</ul>
-		</section>
-
-
-		<!-- Contanct -->
-		<section id="contact">
-			<h2>Get in Touch</h2>
-			<p>Have a new Idea ? Want to discuss something really bizzare ? I am your guy !</p>
-			<div class="row">
-
-
-				<div class="4u$ 12u$(small)">
-					<ul class="labeled-icons">
-						<li>
-							<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
-							+91 790-505-7363
-						</li>
-						<li>
-							<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
-							<a>utkarshshukla2912@gmail.com</a>
-						</li>
-					</ul>
+						</h4>
+					</li>
+				</ul>
+			</section>
+			<!-- Contanct -->
+			<section id="ENandT">
+				<ul>
+					<li>
+						<h4>Entrepreneurship</h4>
+						After working extensively on Brain Computer Interface, <a href = 'https://www.linkedin.com/in/hardik-bhatt-162a7414b/'>Hardik Bhatt</a> and I developed a prototype for realtime epileptic seizure prediction.
+						<br><b>Funds:</b> 20,000 £
+						<br><b>Proof of concept presented in May, 2019.</b>
+					</li>
+					<hr>
+					<li>
+						<h4>Talks</h4>
+						<ul>
+							<li>Getting Brain Waves to Python | <a href="https://www.youtube.com/watch?v=Bdn38wOmHsY" target="_blank"> PyData Delhi 2019</a> </li>
+							<li>A Dive into Brain Waves | <a href="https://commudle.com/gdg-new-delhi/events/devfest-19" target="_blank"> GoogleDeveloperGroup DevFest Delhi 2019</a> </li>
+						</ul>
+					</li>
+					<hr>
+					<li>
+						<h4>Recommended Books</h4>
+						<ul>
+							<li> <b>So Good They Can't Ignore You</b> --- <i> by Cal Newport</i></li>
+							<li> <b>Deep Work</b> --- <i> by Cal Newport</i>  </li>
+							<li> <b>AntiFragile</b> --- <i> by Nassim Nicholas Taleb</i>  </li>
+							<li> <b>Meditations</b> --- <i> by Marcus Aurelius</i>  </li>
+							<li> <b>Naked Statistics</b> --- <i> by Charles Wheelan</i>  </li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<!-- Contanct -->
+			<section id="contact">
+				<h2>Get in Touch</h2>
+				<p>Have a new Idea ? Want to discuss something really bizzare ? I am your guy !</p>
+				<div class="row">
+					<div class="4u$ 12u$(small)">
+						<ul class="labeled-icons">
+							<li>
+								<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+								+91 790-505-7363
+							</li>
+							<li>
+								<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+								<a>utkarshshukla2912@gmail.com</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-		</section>
-
+			</section>
+		</div>
 		<!-- Footer -->
 		<footer id="footer">
 			<ul class="icons">
@@ -396,6 +335,5 @@ $(document).ready(function(){
 				<li><a href="https://www.linkedin.com/in/utkarsh-shukla-8b834b112/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
 			</ul>
 		</footer>
-
 	</body>
-	</html>
+</html>

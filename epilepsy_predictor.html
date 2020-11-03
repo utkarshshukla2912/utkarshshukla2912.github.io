@@ -63,7 +63,7 @@
 
 		<div class="12u$ 12u$(large)">
 			<h2 >Features</h2>
-			<ol>
+			<ul>
 				<li>Quick Preprocessing of data for real-time use, preprocesses 10 mins worth EEG recording sampled at 400Hz with an average of 1.02s i.e processes 10 (mins) X 400 (freq) x 60 (sec per min) =  2,40,000 data points in 1.02 sec </li>
 				<li>Artifacts analysis from EEG to automatically remove noise due to Eye Blinking, Heart Beats and Motor Movement.</li>
 				<li> Extensive feature extraction from multiple domains:<br>
@@ -72,27 +72,27 @@
 					 <b>Time Based:</b> Statistical features skewness, standard deviation<br>
 					 <b>Channel Based:</b> Eigen Matrix of a correlation matrix<br>
 				<li>Ensembled Statistic Machine learning model for classification on the basis of feature extracted</li>
-			</ol>
+			</ul>
 		</div>
 
 		<div class="12u$ 12u$">
 			<h2 >Workflow</h2>
-			<ol>
+			<ul>
                 <li>Scalp Raw EEG recorded serves as an input which is passed to the preprocessing and artifact removal module. The input EEG is sampled at 258 Hz, scaled and is made free from noise, sampled into windows of 2 min with a 1 min overlap </li>
                 <li>The preprocessed window is passed to the feature extraction module where the above-mentioned information is extracted which serve as a feature vector for our model</li>
                 <li>Each window is annotated based on the fact that was it extracted from file corresponding to Seizure recording or not.</li>
                 <li>The features are then passed to an ensemble model made from a simple statistical model for improving sensitivity to the anomalies. The ensemble was made using the Boosting technique</li>
-			</ol>
+			</ul>
 		</div>
 
 		<div class="12u$ 12u$(xsmall)">
 			<h2 >Knowledge Gained</h2>
-			<ol>
+			<ul>
                 <li>Signal Processing and handling noise generated while data recording. </li>
                 <li>EEG processing and artifacts analysis and understanding to what part of the brain they correspond to.</li>
                 <li>Different information hidden within the voltage recordings of the brain.</li>
                 <li>Difference between Bagging and Boosting techniques of creating ensemble models and when which technique should be used.</li>
-			</ol>
+			</ul>
 		</div>
 
 		<div >
